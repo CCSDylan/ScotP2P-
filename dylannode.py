@@ -57,11 +57,12 @@ node_1.start()
 
 time.sleep(1)
 
-node_1.send_to_nodes("MESSAGE FROM IP " + local_ip + ": SEND NUDES") #THIS SENDS
-
-time.sleep(1)
-
-time.sleep(50)
+count = 1
+while True:
+	val = input("Enter your message: ")
+	node_1.send_to_nodes(val + "\nMESSAGE " + str(count) + " FROM IP " + local_ip + ": HELLO") #THIS SENDS
+	time.sleep(5)
+	count += 1
 
 node_1.stop()
 
