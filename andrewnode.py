@@ -50,7 +50,7 @@ node_1 = MyOwnPeer2PeerNode(local_ip, 8003)
 #---------FIND NODES AND THEN CONNECT--------------
 # below is a hard coded ip, will add the
 # automatic finder here later
-node_1.connect_with_node(local_ip, 8001)
+# node_1.connect_with_node(local_ip, 8001)
 #--------------------------------------------------
 time.sleep(1)
 
